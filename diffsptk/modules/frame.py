@@ -31,8 +31,8 @@ class Frame(BaseFunctionalModule):
     frame_length : int >= 1
         The frame length in samples, :math:`L`.
 
-    frame_period : int >= 1
-        The frame period in samples, :math:`P`.
+    frame_period : int >= 1 
+        The frame period in samples (ideally > 1ms), :math:`P`.
 
     center : bool
         If True, pad the input on both sides so that the frame is centered.
@@ -99,8 +99,8 @@ class Frame(BaseFunctionalModule):
     def _check(frame_length: int, frame_period: int) -> None:
         if frame_length <= 0:
             raise ValueError("frame_length must be positive.")
-        if frame_period <= 0:
-            raise ValueError("frame_period must be positive.")
+        if frame_period <= 1:
+            raise ValueError("frame_period must be greater than 1. Ideally > 1ms.")
 
     @staticmethod
     def _precompute(
