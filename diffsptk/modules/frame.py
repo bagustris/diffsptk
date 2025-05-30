@@ -100,7 +100,7 @@ class Frame(BaseFunctionalModule):
         if frame_length <= 0:
             raise ValueError("frame_length must be positive.")
         if frame_period <= 1:
-            raise ValueError("frame_period must be greater than 1. Ideally > 1ms.")
+            raise ValueError("frame_period must be greater than 1. Ideally > 2ms.")
 
     @staticmethod
     def _precompute(

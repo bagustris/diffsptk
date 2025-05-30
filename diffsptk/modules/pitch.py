@@ -73,7 +73,7 @@ class Pitch(BaseNonFunctionalModule):
     ) -> None:
         super().__init__()
 
-        if frame_period < (sample_rate * 1) // 1000:
+        if frame_period < (sample_rate * 2) // 1000:
             raise ValueError("frame_period must be 2 ms or larger.")
         if sample_rate < 8000:
             raise ValueError("sample_rate must be at least 8000 Hz.")
