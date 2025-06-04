@@ -72,6 +72,8 @@ from .idht import InverseDiscreteHartleyTransform
 from .idht import InverseDiscreteHartleyTransform as IDHT
 from .idst import InverseDiscreteSineTransform
 from .idst import InverseDiscreteSineTransform as IDST
+from .ifbank import InverseMelFilterBankAnalysis
+from .ifbank import InverseMelFilterBankAnalysis as IFBANK
 from .ifftr import RealValuedInverseFastFourierTransform
 from .ifreqt2 import SecondOrderAllPassInverseFrequencyTransform
 from .igammatone import GammatoneFilterBankSynthesis
@@ -129,6 +131,7 @@ from .ndps2c import NegativeDerivativeOfPhaseSpectrumToCepstrum
 from .nmf import NonnegativeMatrixFactorization
 from .nmf import NonnegativeMatrixFactorization as NMF
 from .norm0 import AllPoleToAllZeroDigitalFilterCoefficients
+from .oband import FractionalOctaveBandAnalysis
 from .par2is import ParcorCoefficientsToInverseSine
 from .par2lar import ParcorCoefficientsToLogAreaRatio
 from .par2lpc import ParcorCoefficientsToLinearPredictiveCoefficients
